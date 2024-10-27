@@ -8,6 +8,10 @@ Creating an interval is simple. Just call the `create` method with the interval 
 IntervalSystem.create(2, func(): print("hello world"), false, self)
 ```
 
+## Installation
+1. Download the repository
+2. Copy the `addons` folder to your project folder
+3. Enable the plugin in the project settings
 
 ## Reference
 ### IntervalSystem
