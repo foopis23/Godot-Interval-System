@@ -1,4 +1,4 @@
-# Interval System
+# Godot Interval System
 Godot Plugin for executing a code snippet, with a fixed time delay between each call.
 
 ## Usage
