@@ -1,5 +1,5 @@
 # Interval System
-Plugin for executing a code snippet, with a fixed time delay between each call.
+Godot Plugin for executing a code snippet, with a fixed time delay between each call.
 
 ## Usage
 Creating an interval is simple. Just call the `create` method with the interval time in seconds, the function to call, and optionally if the function should be called in idle time and the node that the interval is attached to (if any). The method will return an id that can be used to clear the interval.
