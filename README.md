@@ -1,8 +1,8 @@
 # Godot Interval System
-Godot Plugin for executing a code snippet, with a fixed time delay between each call.
+Godot Plugin for executing a code snippet, with a fixed time delay between each call. This an alterative to Godot's Timer node. 
 
 ## Usage
-Creating an interval is simple. Just call the `create` method with the interval time in seconds, the function to call, and optionally if the function should be called in idle time and the node that the interval is attached to (if any). The method will return an id that can be used to clear the interval.
+Creating an interval is simple. Just call the `create` method with the interval time in seconds, the function to call, and optionally if the function should be called in idle time and the node that the interval is attached to (if any. Passing a node will clear the interval when the node is removed from the scene tree). The method will return an id that can be used to clear the interval.
 
 ```
 IntervalSystem.create(2, func(): print("hello world"), false, self)
@@ -12,6 +12,10 @@ IntervalSystem.create(2, func(): print("hello world"), false, self)
 1. Download the repository
 2. Copy the `addons` folder to your project folder
 3. Enable the plugin in the project settings
+
+## Notes
+### Timing Accuracy
+Intervals can only be processed once per frame process. Low frame rates can produce inaccurate timers.
 
 ## Reference
 ### IntervalSystem
