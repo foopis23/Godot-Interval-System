@@ -15,7 +15,7 @@ IntervalSystem.create(2, func(): print("hello world"), false, self)
 
 ## Notes
 ### Timing Accuracy
-Intervals can only be processed once per frame process. Low frame rates can produce inaccurate timers.
+Intervals can only be processed once per frame process. Low frame rates can produce inaccurate interval times.
 
 ## Reference
 ### IntervalSystem
